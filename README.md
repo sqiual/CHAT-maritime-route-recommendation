@@ -13,3 +13,8 @@ python edit_preprocessing.py
 ````
 python traj2img.py
 ````
+
+Trajectory similarity measurement module Training
+````
+python trajsim_train.py
+````
