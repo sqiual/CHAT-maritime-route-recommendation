@@ -180,15 +180,22 @@ def generate_pred_data(name, out_file_name):
     return m
 
 def main():
-    pred_num = generate_pred_data(['data_trj_202205*.csv'], './data/pred_croptraj_train.hdf5')
+    #pred_num = generate_pred_data(['data_trj_202205*.csv'], './data/pred_croptraj_train.hdf5')
+    #db_num = generate_pred_data(['data_trj_202204*.csv'], './data/pred_croptraj_train_db.hdf5')
 
-    db_num = generate_pred_data(['data_trj_202204*.csv'], './data/pred_croptraj_train_db.hdf5')
+    #print('###',pred_num, 'trajectories used for predction training. ###') # 1290
+    #print('###',db_num, 'trajectories used for predction database. ###') # 1277
 
-    print('###',pred_num, 'trajectories used for predction training. ###') # 1290
-    print('###',db_num, 'trajectories used for predction database. ###') # 1277
-
-    pred_data(pred_num, "./data/pred_croptraj_train.hdf5", "pred_train.hdf5")
-    db_data(db_num, "./data/pred_croptraj_train_db.hdf5", "pred_train_db.hdf5")
+    #pred_data(pred_num, "./data/pred_croptraj_train.hdf5", "pred_train.hdf5")
+    #db_data(db_num, "./data/pred_croptraj_train_db.hdf5", "pred_train_db.hdf5")
+    
+    #############################################################################################
+    # if you go from raw data, please uncomment the 6 lines above and comment the two lines below
+    #############################################################################################
+    
+    pred_num = 1290
+    db_numm = 1277
+    ###############
     
     pred = readfile(pred_num, "pred_train.hdf5")
     training_idx = int((pred_num*0.8 // 10)*10)
