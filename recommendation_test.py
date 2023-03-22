@@ -85,7 +85,7 @@ def main():
     #db_data(db_num, './data/pred_croptraj_test_db.hdf5', "pred_test_db.hdf5")
     
     #############################################################################################
-    # if you go from raw data, please uncomment the 6 lines above and comment the two lines below
+    # if you go from raw data, please uncomment the 5 lines above and comment the two lines below
     #############################################################################################
     
     pred_num = 46
