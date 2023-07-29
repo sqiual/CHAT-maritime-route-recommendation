@@ -9,15 +9,14 @@ Both the database mentioned in the paper and the training data for the CHAT mode
 Please download the files from "CHAT - Training Data," unzip them, and place them under the ./data/ directory.
 
 
-### Prepare data 
+### Data Preparation 
 Preprocess data to focus on the area defined through the "edit_hyper_parameters.json" file
 ````
-python edit_preprocessing.py  
+python preprocessing.py  
 ````
 
 Prepare data for training, evaluation, and testing
 ````
-python preprocessing.py
 python divide_dataset.py
 python divide_dataset_test.py 
 ````
