@@ -3,6 +3,10 @@ This project is the official implementation of CHAT: Maritime Route Prediction v
 
 The project is conducted based on data provided by Danish Maritime Authority (DMA) (https://dma.dk/safety-at-sea/navigational-information/ais-data) and the Office for Coastal Management (USA) (https://marinecadastre.gov/ais/)
 
+### Data
+Both the database mentioned in the paper and the training data for the CHAT model are provided through this link: https://sites.google.com/view/chat-database/home
+Please download the files from "CHAT - Training Data," unzip them, and place them under the ./data/ directory.
+
 ### Prepare data 
 Preprocess data to focus on the area defined through the "edit_hyper_parameters.json" file
 ````
