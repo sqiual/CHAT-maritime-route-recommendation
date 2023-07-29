@@ -5,7 +5,9 @@ The project is conducted based on data provided by Danish Maritime Authority (DM
 
 ### Data
 Both the database mentioned in the paper and the training data for the CHAT model are provided through this link: https://sites.google.com/view/chat-database/home
+
 Please download the files from "CHAT - Training Data," unzip them, and place them under the ./data/ directory.
+
 
 ### Prepare data 
 Preprocess data to focus on the area defined through the "edit_hyper_parameters.json" file
