@@ -17,9 +17,12 @@ python divide_dataset_test.py
 ````
 
 ### Training
+````
 python ceshi_train.py
+````
 
 ### Testing
+````
 python ceshi_test.py
-
+````
 
