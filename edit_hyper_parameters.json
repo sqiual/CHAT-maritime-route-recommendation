@@ -1,0 +1,18 @@
+{
+  "region":
+  {
+    "cityname":"sub1",
+    "minlon":10.3,
+    "minlat":55.5,
+    "maxlon":13,
+    "maxlat":58,
+    "cellsize":50.0,
+    "imgsize_x":128,
+    "imgsize_y":128,
+    "cellsize_lr":100.0,
+    "imgsize_x_lr":64,
+    "imgsize_y_lr":64,
+    "pixelrange":1,
+    "pixelrange_lr":1
+  }
+}

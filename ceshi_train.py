@@ -17,8 +17,6 @@ import random
 import pytorch_ssim
 from torch.autograd import Variable
 import torch
-from diffusion_model import Diffusion
-from diffusion_modules import UNet, pred_traj
 from model import Encoder, TemporalConvNet
 import time
 
