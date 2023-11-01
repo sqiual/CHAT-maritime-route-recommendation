@@ -9,18 +9,10 @@ import torch
 
 def main(length, obs_len, re_sample_intvl, perc):
     f = h5py.File("data/dma_traj_array.hdf5", 'r')
-    # ++++++++++++++++++++++++++++++++++++++++++
-    # ++++++++++++++++++++++++++++++++++++++++++
-    
-    # amount = len(list(f.keys())) // 10 * 10  # the amount of data you expect to use in the experiment
-    # ++++++++++++++++++++++++++++++++++++++++++
-    # ++++++++++++++++++++++++++++++++++++++++++
     
     num_traj = int(round(len(list(f.keys()))*perc))
     val_index = int(round(0.8 * num_traj))
-    # generate trajectory image
     f_names = list(f.keys())
-    #print('# of trajectories:', len(list(f.keys())))
     
     if not os.path.exists("data/processed_data/dma_src_train/"):
         os.makedirs("data/processed_data/dma_src_train/")
