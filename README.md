@@ -31,4 +31,9 @@ python ceshi_test.py
 
 <img width="1262" alt="Screenshot 2023-11-02 at 04 25 27" src="https://github.com/sqiual/CHAT-maritime-route-recommendation/assets/96676550/5f2e1903-23b7-4f77-b614-a194c8ffda29">
 
+<img width="1276" alt="Screenshot 2023-11-02 at 04 25 13" src="https://github.com/sqiual/CHAT-maritime-route-recommendation/assets/96676550/b722df96-83f8-45ca-9fcd-597d28858882">
+
+<img width="1279" alt="Screenshot 2023-11-02 at 04 25 37" src="https://github.com/sqiual/CHAT-maritime-route-recommendation/assets/96676550/54ef634e-4d53-41be-beec-59389080fcd9">
+
+
 
