@@ -66,7 +66,7 @@ def main(draw = False):
     obs_in = 120
     pred_in = 360
     db_in = 480
-    top_num = 9
+    top_num = 7
     noise_steps = 500
     tcn_hidden = [2,2,2,2,2]
     batch_size = 1
@@ -79,7 +79,7 @@ def main(draw = False):
     #netDiffu = Diffusion(noise_steps=noise_steps, beta_start=-6, beta_end=6, img_size=256, device="cuda")
     #netP = TemporalConvNet(num_inputs = c_in, num_channels = tcn_hidden).cuda()
     
-    #path = "checkpoint/CHAT_star6_antiTCN_1mon_top9_epoch_4.pt"
+    #path = "checkpoint/CHAT_star6_antiTCN_1mon_top7_epoch_4.pt"
     path = 'checkpoint/CHAT_star6_BTCN_top9_bestmodel.pt'
     print("=> loading checkpoint '{}'".format(path))
     
