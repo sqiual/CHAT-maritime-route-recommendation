@@ -66,4 +66,4 @@ def main(length, obs_len, re_sample_intvl, perc):
     f.close()
     
 if __name__ == "__main__":
-    main(480, 120, 30, 0.1)
+    main(480, 120, 30, 1)
