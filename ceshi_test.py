@@ -16,8 +16,6 @@ import geopandas as gpd
 from shapely.geometry import Point
 import pickle
 
-#https://blog.csdn.net/chinawangfei/article/details/125458095
-
 with open('edit_hyper_parameters.json') as json_file:
     parameters = json.load(json_file)
     minlon = parameters['region']['minlon']
@@ -57,11 +55,6 @@ def get_distance_hav(lat0, lon0, lat1, lon1):
     return distance
     
 def main(draw = False):
-    # ========== #
-    # ========== #
-
-    # ========== #
-    # ========== #
     c_in=2
     obs_in = 120
     pred_in = 360
@@ -76,20 +69,12 @@ def main(draw = False):
     
     #----------load CHAT model--------
     netE = Encoder(c_in=c_in, obs_in = obs_in, pred_in = pred_in, db_in = db_in, top_num = top_num, tcn_hidden = tcn_hidden).cuda()
-    #netDiffu = Diffusion(noise_steps=noise_steps, beta_start=-6, beta_end=6, img_size=256, device="cuda")
-    #netP = TemporalConvNet(num_inputs = c_in, num_channels = tcn_hidden).cuda()
-    
-    #path = "checkpoint/CHAT_star6_antiTCN_1mon_top7_epoch_4.pt"
     path = 'checkpoint/CHAT_star6_BTCN_top9_bestmodel.pt'
     print("=> loading checkpoint '{}'".format(path))
     
     checkpoint = torch.load(path)
     pred_start_epoch = checkpoint["epoch"]
-    netE.load_state_dict(checkpoint["Encoder"])
-    #optimizerE.load_state_dict(checkpoint["optimizerE"])
-    #netP.load_state_dict(checkpoint["Prediction"])
-    #optimizerP.load_state_dict(checkpoint["optimizerP"])
-    
+    netE.load_state_dict(checkpoint["Encoder"])    
     print(path[11:20], "model of epoch %d" % pred_start_epoch)
 
     if torch.cuda.is_available():
@@ -119,12 +104,7 @@ def main(draw = False):
             
             #---------------------------------------
             # Make prediction  
-            #t_test = netDiffu.sample_timesteps(whole_emb_test.shape[0]).cuda() 
-            #x_t_test, noise_test = netDiffu.noise_images(whole_test.cuda(), t_test) 
-            
-            #model_pred_test = pred_traj(xt = x_t_test.cuda(), cond = top_sim_emb_test.cuda(), model = netP.cuda(), step = noise_steps)
-            #model_pred_test = netP(top_sim_org_test)
-            model_pred_test = top_sim_org_test   #[1, 2, 480]
+           model_pred_test = top_sim_org_test   #[1, 2, 480]
             pred_test = pred_test.cuda()         #[1, 2, 360]
             endtime = time.time()
             inf_time.append(endtime - starttime)
