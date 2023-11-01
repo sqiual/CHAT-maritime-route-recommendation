@@ -8,7 +8,6 @@ import torch
 import time
 from dtaidistance import dtw
 
-# this code is adapted from On Accurate Computation of Trajectory Similarity via Single Image Super-Resolution https://github.com/C-Harlin/trjsr
 
 class MyDataset(Dataset):
     def __init__(self, obs, pred, whole):
@@ -66,7 +65,6 @@ class MyDataset(Dataset):
                 else: continue
             else:
                 continue
-        # https://stackoverflow.com/questions/59738160/denormalization-of-output-from-neural-network
         return obs, pred, db, origin
 
     def __len__(self):
