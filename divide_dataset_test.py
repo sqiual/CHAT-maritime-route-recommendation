@@ -44,4 +44,4 @@ def main(length, obs_len, re_sample_intvl, perc):
     print("Finished processing and segmenting trajectories in length of ", length*re_sample_intvl/60, "minutes")
 
 if __name__ == "__main__":
-    main(480, 120, 30, 0.1)
+    main(480, 120, 30, 1)
