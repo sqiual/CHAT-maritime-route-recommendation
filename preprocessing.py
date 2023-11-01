@@ -67,9 +67,7 @@ def create_data(name, filename, length, skip):
                     
                 #'lat', 'lon', 'width', 'length', 'type'
                 seq = seq[:,((minlat<=seq[0,]) & (seq[0,:]<maxlat) & (minlon<seq[1,:]) & (seq[1,:]<maxlon))]
-                #======================
-                #第二次筛选因为限定了经纬度
-                #======================
+
                 if seq.shape[-1] < length:
                     continue
                 else:
@@ -90,12 +88,6 @@ def create_data(name, filename, length, skip):
 
                         if any(ele > 185.2 for ele in step_speed):
                             continue
-                        #zero = np.zeros([window[v].shape[0], 1])
-                        #tmp = window[v][:, :-1] - window[v][:, 1:]
-                        #tmp = np.concatenate((zero, tmp), axis = -1)
-                        y += 1
-                        # 如果filename是分层的 例如“data/xxx” 这种，那么创建出来的hdf5文件里面会创建出来层级，所有东西会放在“data”这个组下面
-                        # 可以参考第六点 https://zhuanlan.zhihu.com/p/396631517
                         dset = f.create_dataset('%s' % str(y) + '_' + str(date), data=window[v], dtype='f')
                 #--------------------------------------
         print('total # trajectories:', y)
