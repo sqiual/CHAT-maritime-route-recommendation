@@ -107,9 +107,7 @@ def main():
         train_bar = tqdm(train_loader)
 
         for num, data in enumerate(train_bar):
-            #traj_start = time.time()
             obs, pred, db, origin = data  # [N, 2, obs_len], [N, 2, pred_len], # of traj [#, 2, obs_pred_len] [1, 2]
-            # db 比 train的多是因为db的库是历史数据库，和train的库不是一个库
             whole = torch.cat((obs, pred), dim = -1).cuda()  # [N, 2, obs_len+pred_len]
             #---------------------------------------
             # Begin Encoding
