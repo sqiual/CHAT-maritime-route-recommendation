@@ -28,10 +28,7 @@ python ceshi_train.py
 ````
 python ceshi_test.py
 ````
-[ade.pdf](https://github.com/sqiual/CHAT-maritime-route-recommendation/files/13231451/ade.pdf)
 
-[fde.pdf](https://github.com/sqiual/CHAT-maritime-route-recommendation/files/13231450/fde.pdf)
-
-[dbtop.pdf](https://github.com/sqiual/CHAT-maritime-route-recommendation/files/13231452/dbtop.pdf)
+<img width="1262" alt="Screenshot 2023-11-02 at 04 25 27" src="https://github.com/sqiual/CHAT-maritime-route-recommendation/assets/96676550/5f2e1903-23b7-4f77-b614-a194c8ffda29">
 
 
