@@ -6,7 +6,7 @@ The project is conducted based on data provided by Danish Maritime Authority (DM
 
 ### Data
 Both the database mentioned in the paper and the training dataset for the CHAT model are provided through this link: https://sites.google.com/view/chat-database/home
-For demo purpose, we only put a subset of our dataset under the ./data diectory. For reproducibility, please download the whole training dataset from the website provided above.
+/n For demo purpose, we only put a subset of our dataset under the ./data diectory. For reproducibility, please download the whole training dataset from the website provided above.
 
 
 
