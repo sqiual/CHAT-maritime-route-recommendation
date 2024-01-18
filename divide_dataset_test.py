@@ -9,7 +9,7 @@ import torch
 
 def main(length, obs_len, re_sample_intvl, perc):
     f = h5py.File("data/dma_traj_array_test.hdf5", 'r')
-    f_db = h5py.File("data/dma_traj_array_db.hdf5", 'r')
+    f_db = h5py.File("data/dma_traj_array_test_db.hdf5", 'r')
     # generate trajectory image
     f_names = list(f.keys())
     f_db_names = list(f_db.keys())
