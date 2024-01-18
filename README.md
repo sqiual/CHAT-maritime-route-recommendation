@@ -17,6 +17,7 @@ Prepare data for training, evaluation, and testing. Make you have the
 - "dma_traj_array_db.hdf5" (for training and eval)
 - "dma_traj_array_test.hdf5" (for testing)
 - "dma_traj_array_test_db.hdf5" (for testing)
+  
 files download from the website provided above, and correctly placed under ./data
 ````
 python divide_dataset.py
