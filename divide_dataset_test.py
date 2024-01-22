@@ -40,7 +40,7 @@ def main(length, obs_len, re_sample_intvl, perc):
         
     print('Total # of trajectories:', len(list(f.keys())))
     f.close()  
-    print('Total # of trajectories:', num_traj)
+    #print('Total # of trajectories:', num_traj)
     print("Finished processing and segmenting trajectories in length of ", length*re_sample_intvl/60, "minutes")
 
 if __name__ == "__main__":
