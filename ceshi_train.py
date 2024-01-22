@@ -33,8 +33,8 @@ parser.add_argument('--step', default=500, type=int, help='# of step for diffusi
 parser.add_argument('--tcn_hidden', default=[2,2,2,2,2], type=list, help='# of step for diffusion')
 
 #=====================
-parser.add_argument("--top", type=int, default=9, help="top n similar trajectory used for prediction")
-parser.add_argument('--best_model', default='checkpoint/CHAT_star6_BTCN_top9_bestmodel.pt', help='name of the best model')
+parser.add_argument("--top", type=int, default=7, help="top n similar trajectory used for prediction")
+parser.add_argument('--best_model', default='checkpoint/CHAT_star6_BTCN_top7_bestmodel.pt', help='name of the best model')
 #parser.add_argument("--pretrained", default='checkpoint/CHAT_star6_BTCN_15day_top5_bestmodel_new1.pt', type=str, help="path to pretrained model (default: none)")  
 parser.add_argument("--pretrained", default=None, type=str, help="path to pretrained model (default: none)")
 #=====================
