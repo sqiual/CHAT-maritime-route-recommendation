@@ -30,6 +30,11 @@ python ceshi_train.py
 ````
 
 ### Testing
+The default testing area is Area 1. If you want to switch to other areas, please adjust the latitude and longitude prameters in 
+````
+edit_hyper_parameters.json
+````
+before running
 ````
 python ceshi_test.py
 ````
