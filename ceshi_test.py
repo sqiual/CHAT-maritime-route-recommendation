@@ -104,7 +104,7 @@ def main(draw = False):
             
             #---------------------------------------
             # Make prediction  
-           model_pred_test = top_sim_org_test   #[1, 2, 480]
+            model_pred_test = top_sim_org_test   #[1, 2, 480]
             pred_test = pred_test.cuda()         #[1, 2, 360]
             endtime = time.time()
             inf_time.append(endtime - starttime)
