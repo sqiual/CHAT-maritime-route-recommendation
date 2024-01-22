@@ -69,7 +69,7 @@ def main(draw = False):
     
     #----------load CHAT model--------
     netE = Encoder(c_in=c_in, obs_in = obs_in, pred_in = pred_in, db_in = db_in, top_num = top_num, tcn_hidden = tcn_hidden).cuda()
-    path = 'checkpoint/CHAT_star6_BTCN_top9_bestmodel.pt'
+    path = 'checkpoint/CHAT_star6_BTCN_top7_bestmodel.pt'
     print("=> loading checkpoint '{}'".format(path))
     
     checkpoint = torch.load(path)
